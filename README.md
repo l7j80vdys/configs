@@ -4,16 +4,16 @@ Personal configuration files and dotfiles.
 
 ## Contents
 
-- `git/` – git aliases and settings
-- `vim/` – vimrc and plugins
-- `shell/` – bash/zsh profiles
-- `misc/` – other tool configs
+- `git/` – Git aliases and settings
+- `shell/` – shell init scripts
+- `vim/` – editor config
 
 ## Usage
 
-Symlink files into your home directory as needed. See individual subdirectories for details.
+Symlink files into your home directory, e.g.:
 
-## Notes
+```sh
+ln -s ~/configs/git/.gitconfig ~/.gitconfig
+```
 
-- Tested on macOS and Linux (Ubuntu).
-- Keep secrets out of this repo.
+See individual directories for details.
