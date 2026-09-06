@@ -5,14 +5,14 @@ run:
 linters:
   enable:
     - errcheck
+    - gosimple
     - govet
-    - staticcheck
     - ineffassign
+    - staticcheck
     - unused
-    - misspell
-    - gofmt
+  disable:
+    - revive
 
 issues:
-  exclude-use-default: false
-  max-per-linter: 0
-  max-same: 0
+  max-issues-per-linter: 0
+  max-same-issues: 0
